@@ -37,7 +37,9 @@ const CircleEffect: React.FC = () => {
     draw();
   }, []);
 
-  return <canvas ref={canvasRef} style={{ background: "blue", display: "block" }} />;
+  return (
+    <canvas ref={canvasRef} style={{ background: "blue", display: "block" }} />
+  );
 };
 
 export default CircleEffect;

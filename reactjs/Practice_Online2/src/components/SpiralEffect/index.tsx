@@ -88,7 +88,7 @@ const SpiralEffect: React.FC = () => {
     }
 
     function startNewBatch() {
-      if (isCancelledRef.current) return; 
+      if (isCancelledRef.current) return;
       setCurrentColorIndex((prev) => (prev + 1) % colorSequence.length);
     }
 
@@ -102,8 +102,7 @@ const SpiralEffect: React.FC = () => {
   }, [currentColorIndex]);
 
   return (
-    <div
-    >
+    <div>
       <canvas
         ref={canvasRef}
         style={{
